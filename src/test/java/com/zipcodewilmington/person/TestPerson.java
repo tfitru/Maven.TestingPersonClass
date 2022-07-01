@@ -95,4 +95,89 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+
+
+    // roomNumber = 201;
+    @Test
+    public void testSetRoomNumber() {
+        // Given
+        Person person = new Person();
+        Integer expected = 201;
+
+        // When
+        person.setRoomNumber(expected);
+
+        // Then
+        Integer actual = person.getRoomNumber();
+        Assert.assertEquals(expected,actual);
+
+
+    }
+
+
+
+    // teacherName = "Mrs.Frizzle";
+    @Test
+    public void testTeacherName() {
+        // Given
+        Person person = new Person();
+        String expected = "Mrs.Frizzle";
+
+        // When
+        person.setTeacherName(expected);
+
+        // Then
+        String actual = person.getTeacherName();
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    //    favoriteFood = "Pizza";
+    @Test
+    public void testSetFavoriteFood() {
+        // Given
+        Person person = new Person();
+        String expected = "Pizza";
+
+        // When
+        person.setFavoriteFood(expected);
+
+        // Then
+        String actual = person.getFavoriteFood();
+        Assert.assertEquals(expected, actual);
+    }
+
+    //    favoriteColor = "Green";
+    public void testFavoriteColor() {
+        // Given
+        Person person = new Person();
+        String expected = "Green";
+
+        // When
+        person.setFavoriteColor(expected);
+
+        // Then
+        String actual = person.getFavoriteColor();
+        Assert.assertEquals(expected,actual);
+
+
+
+    }
+
+    //    favoriteNumber = 10;
+    @Test
+    public void testFavoriteNumber() {
+        // Given
+        Person person = new Person();
+        Integer expected = 10;
+
+        // When
+        person.setFavoriteNumber(expected);
+
+        // Then
+        Integer actual = person.getFavoriteNumber();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
