@@ -28,15 +28,15 @@ public class Person {
         name = "";
         age = Integer.MAX_VALUE;
         roomNumber = Integer.MAX_VALUE;
-        teacherName = "Mrs.Frizzle";
-        favoriteFood = "Pizza";
-        favoriteColor = "Green";
+        teacherName = "";
+        favoriteFood = "";
+        favoriteColor = "";
         favoriteNumber = Integer.MAX_VALUE;
 
     }
 
     public Person(int age) {
-        this.age = 5;
+        this.age = age;
     }
 
     public Person(String name) {
@@ -69,7 +69,7 @@ public class Person {
 
     public Integer setRoomNumber(int roomNumber) {
 
-        return this.roomNumber = 201;
+        return this.roomNumber = roomNumber;
     }
 
     public Integer getRoomNumber() {

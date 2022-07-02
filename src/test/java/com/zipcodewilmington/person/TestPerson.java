@@ -9,9 +9,16 @@ import org.junit.Test;
 public class TestPerson {
     @Test
     public void testDefaultConstructor() {
+
+
         // Given
         String expectedName = "";
         Integer expectedAge = Integer.MAX_VALUE;
+        Integer expRoomNumber = Integer.MAX_VALUE;
+        String expTeacherName = "";
+        String expFavoriteFood = "";
+        String expFavoriteColor = "";
+        Integer expFavoriteNumber = Integer.MAX_VALUE;
 
         // When
         Person person = new Person();
@@ -19,9 +26,19 @@ public class TestPerson {
         // Then
         String actualName = person.getName();
         Integer actualAge = person.getAge();
+        Integer actualRoomNumber = person.getRoomNumber();
+        String actualTeacherName = person.getTeacherName();
+        String actualFavoriteFood = person.getFavoriteFood();
+        String actualFavoriteColor = person.getFavoriteColor();
+        Integer actualFavoriteNumber = person.getFavoriteNumber();
 
         Assert.assertEquals(expectedName, actualName);
         Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expRoomNumber, actualRoomNumber);
+        Assert.assertEquals(expTeacherName, actualTeacherName);
+        Assert.assertEquals(expFavoriteFood, actualFavoriteFood);
+        Assert.assertEquals(expFavoriteColor, actualFavoriteColor);
+        Assert.assertEquals(expFavoriteNumber, actualFavoriteNumber);
     }
 
     @Test
