@@ -149,6 +149,8 @@ public class TestPerson {
     }
 
     //    favoriteColor = "Green";
+
+    @Test
     public void testFavoriteColor() {
         // Given
         Person person = new Person();

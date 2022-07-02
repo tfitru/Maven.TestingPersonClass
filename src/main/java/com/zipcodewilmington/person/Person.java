@@ -41,21 +41,21 @@ public class Person {
 
     public Person(String name) {
 
-        this.name = "Leon";
+        this.name = name;
     }
 
     public Person(String name, int age) {
 
-        this.name = "Leon";
-        this.age = 5;
+        this.name = name;
+        this.age = age;
     }
 
     public String setName(String name) {
-        return this.name="Leon";
+        return this.name= name;
     }
 
     public Integer setAge(int age) {
-        return this.age=5;
+        return this.age=age;
     }
 
     public String getName() {
@@ -66,11 +66,6 @@ public class Person {
         return age;
     }
 
-//    roomNumber = 201;
-//    teacherName = "Mrs.Frizzle";
-//    favoriteFood = "Pizza";
-//    favoriteColor = "Green";
-//    favoriteNumber = Integer.MAX_VALUE;
 
     public Integer setRoomNumber(int roomNumber) {
 
@@ -85,7 +80,7 @@ public class Person {
 
     public String setTeacherName(String teacherName) {
 
-        return this.teacherName = "Mrs.Frizzle";
+        return this.teacherName = teacherName;
     }
 
     public String getTeacherName() {
@@ -96,7 +91,7 @@ public class Person {
 
     public String setFavoriteFood(String favoriteFood) {
 
-        return this.favoriteFood = "Pizza";
+        return this.favoriteFood = favoriteFood;
     }
 
     public String getFavoriteFood() {
@@ -106,7 +101,7 @@ public class Person {
     //favoriteColor
     public String setFavoriteColor(String favoriteColor) {
 
-        return this.favoriteColor = "Green";
+        return this.favoriteColor = favoriteColor;
     }
 
     public String getFavoriteColor() {
@@ -117,7 +112,7 @@ public class Person {
 
     public Integer setFavoriteNumber(int favoriteNumber) {
 
-        return this.favoriteNumber = 10;
+        return this.favoriteNumber = favoriteNumber;
     }
 
     public Integer getFavoriteNumber() {
